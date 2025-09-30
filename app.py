@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, render_template, request, jsonify
 from geopy.geocoders import Nominatim
 from geopy.distance import geodesic
@@ -24,24 +23,31 @@ def index():
 
 @app.route("/search", methods=["POST"])
 def search():
-    user_input = request.json.get("location")
-    user_loc = geolocator.geocode(user_input)
+    user_input = request.json.get("location", "").strip()
 
+    # If input is blank → return nothing
+    if not user_input:
+        return jsonify({"user": None, "spas": []})
+
+    # Geocode the input
+    user_loc = geolocator.geocode(user_input)
     if not user_loc:
-        return jsonify({"error": "Location not found."}), 400
+        return jsonify({"user": None, "spas": []})
 
     user_coords = (user_loc.latitude, user_loc.longitude)
 
-    # Calculate distances
+    # Calculate distances + travel times
     results = []
     for spa in spa_coords:
         spa_coords_tuple = (spa["lat"], spa["lon"])
         dist = geodesic(user_coords, spa_coords_tuple).km
+        est_time_min = round(dist)  # simple driving estimate (1 km ≈ 1 min)
         results.append({
             "address": spa["address"],
             "lat": spa["lat"],
             "lon": spa["lon"],
-            "distance": round(dist, 2)
+            "distance": round(dist, 2),
+            "travel_time": f"{est_time_min} min"
         })
 
     # Sort by distance
@@ -49,7 +55,7 @@ def search():
 
     return jsonify({
         "user": {"lat": user_loc.latitude, "lon": user_loc.longitude},
-        "spas": results[:10]
+        "spas": results[:10]  # return top 10 closest
     })
 
 if __name__ == "__main__":

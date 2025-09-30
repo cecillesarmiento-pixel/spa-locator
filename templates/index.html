@@ -1,64 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Spa Locator</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
   <style>
-    #map { height: 500px; margin-top: 10px; }
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    input, button { padding: 8px; margin-top: 5px; }
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #map { height: 400px; width: 100%; margin-top: 10px; border: 1px solid #ccc; }
+    #results { margin-top: 10px; }
+    input, button {
+      padding: 8px;
+      font-size: 14px;
+      margin: 5px 0;
+    }
   </style>
 </head>
 <body>
-  <h2>Find the Nearest Spa</h2>
-  <input id="location" type="text" placeholder="Enter city or zip">
-  <button onclick="findSpas()">Search</button>
-  
+  <h2>Spa Locator</h2>
+  <input id="location" type="text" placeholder="Enter a location" />
+  <button id="searchBtn">Search</button>
   <div id="results"></div>
   <div id="map"></div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    let map = L.map('map').setView([37.7749, -122.4194], 4); // default USA view
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
+  document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("location");
+      const button = document.getElementById("searchBtn");
+      const resultsDiv = document.getElementById("results");
 
-    function findSpas() {
-      const location = document.getElementById("location").value;
-      fetch("/search", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ location })
-      })
-      .then(res => res.json())
-      .then(data => {
-        if (data.error) {
-          alert(data.error);
-          return;
-        }
+      // Initialize map
+      const map = L.map("map").setView([20, 0], 2);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: "© OpenStreetMap contributors"
+      }).addTo(map);
 
-        document.getElementById("results").innerHTML = "";
+      let markers = [];
 
-        map.setView([data.user.lat, data.user.lon], 8);
-        L.marker([data.user.lat, data.user.lon]).addTo(map)
-          .bindPopup("Your Location").openPopup();
+      function clearMarkers() {
+          markers.forEach(m => map.removeLayer(m));
+          markers = [];
+      }
 
-        data.spas.forEach(spa => {
-          L.marker([spa.lat, spa.lon]).addTo(map)
-            .bindPopup(`${spa.address}<br>
-                        Lat: ${spa.lat}, Lon: ${spa.lon}<br>
-                        Distance: ${spa.distance} km`);
+      function performSearch() {
+          const query = input.value.trim();
+          if (!query) {
+              resultsDiv.innerHTML = "";
+              clearMarkers();
+              return;
+          }
 
-          document.getElementById("results").innerHTML += `
-            <p><b>${spa.address}</b><br>
-            Lat: ${spa.lat}, Lon: ${spa.lon}<br>
-            Distance: ${spa.distance} km</p>
-          `;
-        });
+          fetch("/search", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ location: query })
+          })
+          .then(res => res.json())
+          .then(data => {
+              resultsDiv.innerHTML = "";
+              clearMarkers();
+
+              if (!data.user) {
+                  resultsDiv.innerHTML = "<p>No results found.</p>";
+                  return;
+              }
+
+              // Add user marker (blue icon)
+              const userLat = data.user.lat;
+              const userLon = data.user.lon;
+              const userIcon = L.icon({
+                  iconUrl: "https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png",
+                  iconSize: [32, 32],
+                  iconAnchor: [16, 32],
+                  popupAnchor: [0, -32]
+              });
+              const userMarker = L.marker([userLat, userLon], { icon: userIcon })
+                  .addTo(map)
+                  .bindPopup("You are here");
+              markers.push(userMarker);
+
+              // Add spa markers + results
+              if (data.spas.length === 0) {
+                  resultsDiv.innerHTML = "<p>No spas found nearby.</p>";
+              } else {
+                  resultsDiv.innerHTML = data.spas.map(spa =>
+                      `<p>${spa.address} - ${spa.distance} km - ${spa.travel_time}</p>`
+                  ).join("");
+
+                  data.spas.forEach(spa => {
+                      const marker = L.marker([spa.lat, spa.lon]).addTo(map)
+                          .bindPopup(`${spa.address}<br>${spa.distance} km<br>${spa.travel_time}`);
+                      markers.push(marker);
+                  });
+              }
+
+              // Fit map bounds to all markers
+              const group = L.featureGroup(markers);
+              map.fitBounds(group.getBounds(), { padding: [50, 50] });
+
+          })
+          .catch(err => {
+              resultsDiv.innerHTML = `<p>Error: ${err.message}</p>`;
+          });
+      }
+
+      // Enter key triggers search
+      input.addEventListener("keyup", (event) => {
+          if (event.key === "Enter") {
+              performSearch();
+          }
+          if (input.value.trim() === "") {
+              resultsDiv.innerHTML = "";
+              clearMarkers();
+          }
       });
-    }
+
+      button.addEventListener("click", performSearch);
+  });
   </script>
 </body>
 </html>
