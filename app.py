@@ -40,22 +40,26 @@ def search():
     results = []
     for spa in spa_coords:
         spa_coords_tuple = (spa["lat"], spa["lon"])
-        dist = geodesic(user_coords, spa_coords_tuple).km
-        est_time_min = round(dist)  # simple driving estimate (1 km ≈ 1 min)
-        results.append({
-            "address": spa["address"],
-            "lat": spa["lat"],
-            "lon": spa["lon"],
-            "distance": round(dist, 2),
-            "travel_time": f"{est_time_min} min"
-        })
+        dist_km = geodesic(user_coords, spa_coords_tuple).km
+        dist_miles = dist_km * 0.621371  # convert km → miles
+
+        # Only include spas within 100 miles
+        if dist_miles <= 100:
+            est_time_min = round(dist_miles)  # simple driving estimate: 1 mile ≈ 1 min
+            results.append({
+                "address": spa["address"],
+                "lat": spa["lat"],
+                "lon": spa["lon"],
+                "distance": round(dist_miles, 2),
+                "travel_time": f"{est_time_min} min"
+            })
 
     # Sort by distance
     results = sorted(results, key=lambda x: x["distance"])
 
     return jsonify({
         "user": {"lat": user_loc.latitude, "lon": user_loc.longitude},
-        "spas": results[:10]  # return top 10 closest
+        "spas": results[:10]  # return top 10 closest within 100 miles
     })
 
 if __name__ == "__main__":
