@@ -6,15 +6,17 @@ import csv
 app = Flask(__name__)
 geolocator = Nominatim(user_agent="spa_locator")
 
-# Load spa coordinates from CSV
+# Load spa coordinates, names, and status
 spa_coords = []
 with open("spas.csv", newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
     for row in reader:
         spa_coords.append({
+            "name": row["name"],
             "address": row["address"],
             "lat": float(row["lat"]),
-            "lon": float(row["lon"])
+            "lon": float(row["lon"]),
+            "status": row["status"]
         })
 
 @app.route("/")
@@ -23,44 +25,47 @@ def index():
 
 @app.route("/search", methods=["POST"])
 def search():
-    user_input = request.json.get("location", "").strip()
+    try:
+        user_input = request.json.get("location", "").strip()
+        if not user_input:
+            return jsonify({"user": None, "spas": []})
 
-    # If input is blank → return nothing
-    if not user_input:
-        return jsonify({"user": None, "spas": []})
+        # Use Nominatim to geocode the input
+        user_loc = geolocator.geocode(user_input)
+        if not user_loc:
+            return jsonify({"user": None, "spas": []})
 
-    # Geocode the input
-    user_loc = geolocator.geocode(user_input)
-    if not user_loc:
-        return jsonify({"user": None, "spas": []})
+        user_coords = (user_loc.latitude, user_loc.longitude)
 
-    user_coords = (user_loc.latitude, user_loc.longitude)
+        results = []
+        for spa in spa_coords:
+            spa_coords_tuple = (spa["lat"], spa["lon"])
+            dist_km = geodesic(user_coords, spa_coords_tuple).km
+            dist_miles = dist_km * 0.621371  # km → miles
 
-    # Calculate distances + travel times
-    results = []
-    for spa in spa_coords:
-        spa_coords_tuple = (spa["lat"], spa["lon"])
-        dist_km = geodesic(user_coords, spa_coords_tuple).km
-        dist_miles = dist_km * 0.621371  # convert km → miles
+            # Only include spas within 100 miles
+            if dist_miles <= 100:
+                est_time_min = round(dist_miles)  # simple driving estimate: 1 mile ≈ 1 min
+                results.append({
+                    "name": spa["name"],
+                    "address": spa["address"],
+                    "status": spa["status"],
+                    "lat": spa["lat"],
+                    "lon": spa["lon"],
+                    "distance": round(dist_miles, 2),
+                    "travel_time": f"{est_time_min} min"
+                })
 
-        # Only include spas within 100 miles
-        if dist_miles <= 100:
-            est_time_min = round(dist_miles)  # simple driving estimate: 1 mile ≈ 1 min
-            results.append({
-                "address": spa["address"],
-                "lat": spa["lat"],
-                "lon": spa["lon"],
-                "distance": round(dist_miles, 2),
-                "travel_time": f"{est_time_min} min"
-            })
+        # Sort by distance
+        results = sorted(results, key=lambda x: x["distance"])
 
-    # Sort by distance
-    results = sorted(results, key=lambda x: x["distance"])
+        return jsonify({
+            "user": {"lat": user_loc.latitude, "lon": user_loc.longitude},
+            "spas": results[:10]  # top 10 closest
+        })
 
-    return jsonify({
-        "user": {"lat": user_loc.latitude, "lon": user_loc.longitude},
-        "spas": results[:10]  # return top 10 closest within 100 miles
-    })
+    except Exception as e:
+        return jsonify({"error": str(e), "user": None, "spas": []}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)

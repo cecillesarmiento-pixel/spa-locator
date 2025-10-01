@@ -1,124 +1,131 @@
-address,lat,lon
-1100 S Hayes St Unit 4 Arlington VA 22202,38.8681,-77.088
-2015 Bond St Charlottesville VA 22901 ,38.0293,-78.4767
-11800 W Broad St Richmond VA 23233 ,37.6092,-77.5611
-9200 Stony Point Pkwy Richmond VA 23235 ,37.5622,-77.469
-701 Lynnhaven Parkway Virginia Beach VA 23452 ,36.8227,-76.0578
-117 N Fairfax street Alexandria VA 22314 ,38.8123,-77.0499
-1100 Biscayne Blvd Miami FL 33132,25.774,-80.1937
-2977 Goodlett-Frank Rd unit 41 Naples FL 34103 ,26.1332,-81.7836
-875 Meadows Rd Suite 314 Ground Floor Boca Raton FL 33486,26.3726,-80.1611
-7555 W 150th St Overland Park KS 66223,38.9212,-94.6925
-4494 Southside Blvd Jacksonville FL 32216 ,30.1783,-81.6375
-200 NE 2nd Ave STE 104 Delray Beach FL 33444,26.4615,-80.064
-1880 N Congress Ave STE 330 Boynton Beach FL 33426 ,26.5311,-80.0711
-4400 Sharon Rd Charlotte NC 28211 ,35.2331,-80.8165
-1595 Highway 36 W Roseville MN 55113 ,45.0201,-93.1816
-12247 Queenston Blvd suite A Houston TX 77095 ,29.9455,-95.649
-1600 N Riverside Ave Unit 1136 Rogue Valley Mall Medford OR 97501,42.3305,-122.8748
-2901 S Capital of Texas Hwy Austin TX 78746 ,30.2598,-97.7866
-2901 S Capital Of TX Hwy Space K11 Austin TX 78746 ,30.2598,-97.7866
-"5 Woodfield Mall Room F328 Schaumburg, IL 60173",42.0626,-88.0331
-5220 Fashion Outlets Way Unit #1115 Rosemont IL 60018-4811 ,41.9861,-87.854
-4601 S Broadway Ave Unit C12 Tyler TX 75703 ,32.2782,-95.3116
-3500 Mccann Rd Ste F01 Longview TX 75605 ,32.4801,-94.7404
-16741 champion forest dr Spring TX 77379 ,30.0981,-95.5302
-3111 W Chandler Blvd Chandler AZ 85226 ,33.3068,-111.8906
-6170 W. Grand Avenue Unit 661 Gurnee IL 60031,42.3432,-87.9507
-1511 Locust St Walnut Creek CA 94596 ,37.9058,-122.063
-309 E Katella Avenue Orange CA 92867 ,33.7894,-117.851
-224 Main St Seal Beach CA 90740 ,33.7417,-118.0824
-326 Marine Ave Suite A Newport Beach CA 92662 ,33.6081,-117.9283
-16456 Bolsa Chica St Huntington Beach CA 92649 ,33.7202,-118.0015
-14700 E Indiana Ave Spokane Valley WA 99216 ,47.6764,-117.1735
-5085 Westheimer Rd Houston TX 77056,29.7441,-95.5528
-5111 N Scottsdale Rd Suite 208 Scottsdale AZ 85250 ,33.591,-111.8952
-20880 W Dixie Hwy Miami FL 33180 ,25.8892,-80.1658
-4501 Mission Dr. Suite 2A San Diego CA 92109 ,32.7897,-117.2523
-635 SW Morrison St Portland OR 97205 ,45.5162,-122.6784
-"Unit 226 1829 Ranchlands Blvd NW Calgary, Alberta T3G 2A7",51.1222,-114.1848
-8180 Macleod Trail SE Unit 26 Calgary AB T2H 2B8 ,50.9813,-114.0652
-139 NW 136th Ave Sunrise FL 33325 ,26.1632,-80.2962
-15725 Pomerado Rd Poway CA 92064 ,32.9621,-117.0355
-2250 Kalakaua Ave suite 217 Honolulu HI 96815,21.282,-157.8325
-2201 N Commerce Pkwy Weston FL 33326 ,26.1115,-80.3991
-669 Lexington Ave New York NY 10022 ,40.7619,-73.971
-2000 NJ-38 Cherry Hill NJ 08002 ,39.9235,-74.9945
-1201 First Street Coronado CA 92118 ,32.6879,-117.1853
-8228 W 3rd St Los Angeles CA 90048 ,34.0736,-118.3711
-760 N Denton Tap Rd Coppell TX 75019 ,32.9851,-97.015
-272 E. Via Rancho Pkwy Ste 229 Escondido CA 92025 ,33.1242,-117.0809
-602 E 500S Salt Lake City UT 84102 ,40.756,-111.8826
-2601 Preston Rd Frisco TX 75034 ,33.1533,-96.8236
-7855 Girard Avenue La Jolla CA 92037 ,32.8597,-117.239
-199 SPOTNAP RD CHARLOTTESVILLE VA 22911 ,38.0789,-78.4772
-50 N. Milwaukee Street Boise ID 83704 ,43.6187,-116.214
-219 Marine Ave Newport Beach CA 92662 ,33.6075,-117.9265
-7220 E. Main St. Scottsdale AZ 85251 ,33.5962,-111.8872
-3688 Meggison Rd The Villages FL 32163 ,28.9123,-81.9945
-7600 Kingston Pike Knoxville TN 37919 ,35.9491,-83.9598
-301 Marine Ave Ste B Newport Beach CA 92662 ,33.6092,-117.9268
-1 Stoneridge Mall Rd Pleasanton CA 94588 ,37.6626,-121.8983
-100 Briarwood Cir Ann Arbor MI 48108 ,42.241,-83.7486
-4125 Cleveland Ave Fort Myers FL 33901 ,26.6418,-81.8642
-2601 PRESTON RD #1050 FRISCO TX 75034 ,33.1533,-96.8236
-10300 Forest Hill Blvd Wellington FL 33414 ,26.6611,-80.2634
-20330 N Deer Park Blvd Deer Park IL 60010 ,42.2561,-87.9348
-24201 Valencia Blvd Santa Clarita CA 91355 ,34.4362,-118.5356
-701 Lynnhaven Pkway. Virginia Beach VA 23452  ,36.8227,-76.0578
-29049 Overland Dr. Temecula CA 92591 ,33.519,-117.1233
-685 Cannery Row Monterey CA 93940 ,36.6136,-121.9022
-1105 Main St Lady Lake FL 32159 ,28.9182,-81.926
-251 Calle Fortaleza San Juan PR 00901 ,18.4655,-66.1167
-293 Valley River Center Eugene OR 97401 ,44.0506,-123.0939
-758 Market St. San Francisco CA 94102 ,37.7877,-122.4037
-542 N El Camino Real San Clemente CA 92672 ,33.4303,-117.6133
-1 NE Ocean Ave and Monteverde StCarmel-by-the-sea 93921  ,36.5555,-121.923
-800 E Dimond Blvd Anchorage AK 99515 ,61.1545,-149.791
-3433 Galt Ocean Dr Fort Lauderdale FL 33308 ,26.2122,-80.1017
-11200 Lakeline Mall Drive Cedar Park TX 78613 ,30.5196,-97.8245
-Red Barn Plaza 1707 First St E Store F Bradenton FL 34208,27.4975,-82.5742
-6419 W Newberry Rd Gainesville FL 32605 ,29.6511,-82.3661
-540 Pennsylvania Ave Fort Washington PA 19034 ,40.1483,-75.2083
-1320 W Valley Pkwy Escondido CA 92029 ,33.115,-117.1002
-635 Madison Ave New York NY 10022 ,40.7637,-73.9723
-10801 Corkscrew Rd Estero FL 33928 ,26.4273,-81.7984
-1441 Tamiami Trail Port Charlotte FL 33948 ,26.9925,-82.0455
-5000 Katy Mills Circle #647 Katy TX 77494 ,29.7851,-95.824
-8700 E Pinnacle Peak Rd #101 Scottsdale AZ 85255 ,33.6081,-111.891
-208 W San Francisco Santa Fe NM 87501 ,35.6869,-105.9378
-6901 22nd Ave N St. Petersburg FL 33710 ,27.8085,-82.6868
-3000 184th St SW Lynnwood WA 98037 ,47.8275,-122.309
-1531 Eldridge Pkwy Houston TX 77077 ,29.7993,-95.6025
-6100 Southwest Blvd Suite 100 Benbrook TX 76109 ,32.6881,-97.4603
-1349 Orange Ave Coronado CA 92118 ,32.6807,-117.176
-2525 El Camino Real Carlsbad CA 92008 ,33.1347,-117.3256
-2223 N Westshore Blvd Tampa FL 33607 ,27.9485,-82.5037
-3500 S Las Vegas Blvd Las Vegas NV 89109 ,36.1037,-115.1728
-411 E Atlantic Ave Delray Beach FL 33483 ,26.4615,-80.0633
-937 S Coast Hwy 101 C#100 Encinitas CA 92024 ,33.0462,-117.291
-5244 N Eagle Rd Boise ID 83713 ,43.6468,-116.2921
-31 Almeria Ave Coral Gables FL 33134 ,25.7172,-80.2715
-2434 E Las Olas Blvd Fort Lauderdale FL 33301 ,26.1231,-80.1386
-8851 Center Dr La Mesa CA 91942 ,32.7766,-117.024
-4780 NW 39th Ave Gainesville FL 32606 ,29.6958,-82.3717
-5857 21st Ave W Bradenton FL 34209 ,27.4954,-82.5853
-300 Divisadero St San Francisco CA 94117 ,37.772,-122.4377
-3070 El Camino Real Santa Clara CA 95051 ,37.3443,-121.973
-20406 Redwood Rd #E Castro Valley CA 94546 ,37.684,-122.0965
-130 La Casa Via unit 204 Building 1 floor 2 Walnut Creek CA 94598 ,37.912,-122.057
-6371 Mission St Daly City CA 94014 ,37.706,-122.469
-4122 Shelbyville Rd St Matthews KY 40207 ,38.241,-85.638
-3401 Nicholasville Rd Lexington KY 40503 ,38.0071,-84.4771
-450 A St San Diego CA 92101 ,32.7136,-117.16
-1000 North Point Cir Alpharetta GA 30022 ,34.0741,-84.268
-900 Dana Dr Ste B7 Redding CA 96003,40.573,-122.369
-3225 N 75th St. Suite 110 Scottsdale AZ 85251 ,33.617,-111.9
-16100 State Hwy 121 bldg b 220 Frisco TX 75035 ,33.1527,-96.8175
-8200 E Belleview Ave Suite 100E Greenwood Village CO 80111,39.6081,-104.9021
-7155 S. Rainbow Blvd. Suite 200 Las Vegas NV 89118 ,36.102,-115.243
-1590 NE 162nd St. Unit 700 North Miami Beach FL 33162 ,25.933,-80.151
-2678 W Broadway Suite #207 Vancouver BC V6K 2G3 Canada,49.261,-123.142
-8700 NE Vancouver Mall unit 156 Dr Vancouver WA 98662 ,45.638,-122.661
-1186 NE Douglas St Lee's Summit MO ,38.9197,-94.3815
-22554 Ventura Blvd Ste 109 Woodland Hills CA 91364 ,34.1655,-118.605
+name,address,lat,lon,status
+Le Pelle,"1511 Locust St, Walnut Creek, CA 94596",37.8997823,-122.06248,Active
+Skin Totale Med Spa,"309 E Katella Avenue, Orange, CA 92867",33.8102835,-117.85054,Active
+Celine Seal Beach,224 Main St Seal Beach CA 90740,33.7420416,-118.10412,Active
+Luxura Charlottesville,"2015 Bond St, Charlottesville, VA 22901",38.029306,-78.476678,Active
+Luxura Short Pump,"11800 W Broad St, Richmond, VA 23233",37.6561375,-77.619876,Active
+Luxura Stony Point,"9200 Stony Point Pkwy, Richmond, VA 23235",37.5503586,-77.571829,Active
+Luxura Virginia Beach,"701 Lynnhaven Parkway, Virginia Beach, VA 23452",36.8187087,-76.070596,Active
+Luxura Alexandria,117 N Fairfax street Alexandria Va 22314,38.8050818,-77.042085,Active
+Ora Sempre Naples,2977 Goodlett-Frank Rd unit 41 Naples Florida 34103,26.2182,-81.7929,Inactive
+Solei Beauty Lounge,"7555 W 150th St, Overland Park, KS, 66223",38.8556156,-94.674067,Active
+Solei Beauty Lounge,"1186 NE Douglas St, Lee's Summit, MO",38.9336641,-94.378777,Active
+Minarelle IL,"5 Woodfield Mall, Room F328, Schaumburg, IL, 60173",42.0466942,-88.0372938,Active
+Vivorelle,"6170 W. Grand Avenue, Unit 661, Gurnee, IL 60031",41.9214638,-87.780055,Active
+Novuskin Frisco,"16100 State Hwy 121 Bldg B 220, Frisco, TX 75035",42.2525898,-79.505973,Active
+Novuskin Denver,"8200 E Belleview Ave, Suite 100E, Greenwood Village, CO 80111",39.6230496,-104.89329,Active
+Novuskin Las Vegas,"7155 S. Rainbow Blvd. Suite 200, Las Vegas, NV 89118",36.0582134,-115.24358,Active
+Royal Bee Chicago,"5220 Fashion Outlets Way Unit #1115 Rosemont, IL 60018-4811",41.9750558,-87.867055,Active
+Celine Newport Beach,326 Marine Ave Suite A Newport Beach CA 92662,40.6143963,-74.033924,Inactive
+Kibali Med Spa,"875 Meadows Rd, Suite 314, Ground Floor, Boca Raton, FL 33486",46.0105286,-60.317068,Inactive
+Essence Med Spa,"1590 NE 162nd St. Unit 700, North Miami Beach Florida 33162",25.9245152,-80.168438,Inactive
+Minarelle VA,"1100 S Hayes St, Unit 4, Arlington, VA 22202",38.8632091,-77.060899,Inactive
+Alice Med Spa,"1100 Biscayne Blvd, Miami, FL, 33132 - Grayson Hotel",25.785214,-80.189931,Inactive
+Minarelle TX,"2901 S Capital of Texas Hwy, Austin, TX 78746",30.2540028,-97.807358,Inactive
+Introstem Tyler,"4601 S Broadway Ave Unit C12 Tyler, Tx 75703",32.299442,-95.30263,Inactive
+Lavelier,"3500 Mccann Rd Ste F01 Longview, Tx 75605",32.5385423,-94.75011,Inactive
+Liv Med Spa,"16741 champion forest dr Spring tx, 77379",30.01236,-95.53849,Inactive
+Skin So Sweet,"16456 Bolsa Chica St, Huntington Beach, CA 92649",33.7224347,-118.04171,Inactive
+Ora Sempre Spokane,"14700 E Indiana Ave, Spokane Valley, WA 99216",47.6735356,-117.20692,Inactive
+Beyond Beauty,"669 Lexington Ave, New York, NY 10022",40.7599663,-73.969709,Inactive
+Cherry Hill,"2000 NJ-38, Cherry Hill, NJ 08002",39.9395238,-75.028859,Inactive
+Coronado Lily Med,"1201 First Street Coronado, CA 92118",32.68097,-117.17832,Inactive
+Aria Bio Spa,"8228 W 3rd st , Los Angeles CA 90048",34.0724925,-118.36921,Inactive
+Renewaskin,"760 N Denton Tap Rd, Coppell, TX 75019",32.9889662,-96.99279,Inactive
+Escondido Vitalitea,"272 E. Via Rancho Pkwy Ste 229 Escondido, CA 92025",33.0695717,-117.06426,Inactive
+Spa Center Voupre,"602 E 500S Salt Lake City, UT 84102",40.7569,-111.8722,Inactive
+Resveralife,"2601 Preston Rd Frisco, TX 75034",33.0989557,-96.810965,Inactive
+Lily Beauty,"7855 Girard Avenue La Jolla, CA 92037",32.846214,-117.27394,Service Only
+Forever Flawless,"50 N. Milwaukee Street Boise, ID 83704",43.6190077,-116.28428,Inactive
+Voupre Balboa Island,"219 Marine Ave, Newport Beach, CA 92662",33.6065672,-117.89003,Inactive
+Scottsdale,"7220 E. Main St. Scottsdale, AZ 85251",33.4932141,-111.92569,Inactive
+Royal Bee the Villages,"3688 Meggison Rd, The Villages, FL 32163",28.8437609,-82.022688,Inactive
+Lavelier,"7600 Kingston Pike, Knoxville, TN 37919",35.9248498,-84.038877,Inactive
+Skin Thetix,"301 Marine Ave Ste B, Newport Beach, CA 92662",40.61496,-74.034249,Inactive
+Forever Flawless - Stonebriar,"1 Stoneridge Mall Rd, Pleasanton, CA 94588",37.6921,-121.92335,Inactive
+Introstem Michigan,"100 Briarwood Cir, Ann Arbor, MI 48108",42.2427983,-83.746505,Inactive
+Voupre Fort Myers,"4125 Cleveland Ave, Fort Myers, FL 33901",26.6018576,-81.868351,Inactive
+Green Biotics Frisco,"2601 Preston Rd #1050, Frisco, TX 75034",33.0991625,-96.812028,Inactive
+Royalty Beauty Spa,"10300 Forest Hill Blvd, Wellington, FL 33414",26.6511132,-80.208647,Inactive
+LED Life,"20330 N Deer Park Blvd Deer Park, IL 60010",42.15924,-88.05382,Inactive
+Oro Cosmetics,"24201 Valencia Blvd, Santa Clarita, CA 91355",34.4144824,-118.55805,Inactive
+Tresor Rare VA,"701 Lynnhaven Pkway. Virginia Beach, VA 23452",36.8483,-76.0841,Inactive
+Lola Soap,"685 Cannery Row Monterey, CA 93940",36.6157294,-121.9002,Inactive
+Rachel's Best Soap - Lady Lake,"1105 Main St Lady Lake , FL 32159",28.9407167,-81.949827,Inactive
+Visage Luxury Beauty,"251 Calle Fortaleza, San Juan, PR 00901",18.4652675,-66.1141,Inactive
+Lola Soap Eugene,"293 Valley River Center, Eugene OR 97401",44.0680776,-123.10603,Inactive
+Naturalift,"758 Market St. San Francisco, CA 94102",37.786278,-122.40501,Inactive
+Skinthetix San Clemente,"542 N El Camino Real, San Clemente, CA 92672",33.4298009,-117.61695,Inactive
+Sense Life Carmel,"1 NE Ocean Ave and Monteverde, Carmel-by-the-sea 93921",36.5553,-121.9233,Inactive
+Belissima,"800 E Dimond Blvd, Anchorage, AK 99515",61.1429514,-149.86955,Inactive
+Inglot,"4400 Sharon Rd, Charlotte, NC 28211",35.1529082,-80.833451,Inactive
+Ocean Spa,"3433 Galt Ocean Dr, Fort Lauderdale, FL 33308",26.1703497,-80.099207,Inactive
+ICURE,"11200 Lakeline Mall Drive, Cedar Park, TX 78613",30.4705185,-97.806965,Inactive
+Secret Collagen,"Red Barn Plaza 1707 First St E, Store F Bradenton Florida, 34208",27.4989,-82.5748,Inactive
+Earth Tech,"2901 S Capital of Texas Hwy, Austin, TX 78746",30.2540028,-97.807358,Inactive
+Garden Retreat,"540 Pennsylvania Ave, Fort Washington, PA 19034",40.1336086,-75.205454,Inactive
+Lily Beauty Escondido,"1320 W Valley Pkwy, Escondido, CA 92029",33.113783,-117.10265,Service Only
+Luxura Med Spa NY,"635 Madison Ave, New York, NY 10022",40.7637153,-73.971011,Inactive
+Rachel's Best Estero,"10801 Corkscrew Rd, Estero, FL 33928",26.43604,-81.77305,Inactive
+Noveau,"1441 Tamiami Trail, Port Charlotte, FL 33948",27.0090839,-82.14666,Inactive
+Zahav Med Spa,"8700 E Pinnacle Peak Rd #101, Scottsdale, AZ 85255",33.69914,-111.89255,Inactive
+Mila's Cosmetics,"5000 Katy Mills Circle #647, Katy, TX 77494",29.773133,-95.809246,Service Only
+Voupre Santa Fe,"208 W San Francisco, Santa Fe, NM 87501",35.6875034,-105.94088,Inactive
+Pre'Dire,"6901 22nd Ave N, St. Petersburg, FL 33710",27.7932553,-82.732876,Inactive
+Introstem Seattle,"3000 184th St SW, Lynnwood, WA 98037",47.8298494,-122.27137,Inactive
+Mila's Cosmetics,"1531 Eldridge Pkwy, Houston, TX 77077",29.755966,-95.624606,Service Only
+Skin Tech,"6100 Southwest Blvd Suite 100, Benbrook, TX 76109",32.6919529,-97.413763,Inactive
+Pharmaciopy Coronado,"1349 Orange Ave, Coronado, CA 92118",32.6830422,-117.17877,Inactive
+Introstem Carlsbad,"2525 El Camino Real Carlsbad, CA 92008",33.1776763,-117.33022,Inactive
+Kristals,"2223 N Westshore Blvd, Tampa, FL 33607",27.964542,-82.520721,Inactive
+Green Biotics LV,"3500 S Las Vegas Blvd, Las Vegas, NV 89109",36.1190618,-115.17359,Inactive
+Royal Bee Delray,"411 E Atlantic Ave, Delray Beach, FL 33483",26.4617333,-80.068848,Inactive
+The Glow,"937 S Coast Hwy 101 C#100, Encinitas, CA 92024",33.0403,-117.2926,Inactive
+Prophecy Clinic Boise,"5244 N Eagle Rd, Boise, ID 83713",43.6522773,-116.35348,Service Only
+Isha Beauty,"31 Almeria Ave, Coral Gables, FL 33134",25.7473783,-80.255205,Inactive
+Lumiere,"2434 E Las Olas Blvd, Fort Lauderdale, FL 33301",26.1200627,-80.113408,Inactive
+Prophecy Clinic La Mesa,"8851 Center Dr, La Mesa, CA 91942",32.7822757,-117.00741,Service Only
+Ageless Spa Center,"4780 NW 39th Ave, Gainesville, FL 32606",29.6889796,-82.394382,Inactive
+Bradenton Spa Center,"5857 21st Ave W , Bradenton , FL 34209",27.4802451,-82.619237,Inactive
+Lily Beauty San Francisco,"300 Divisadero St, San Francisco, CA 94117",37.7723367,-122.43709,Service Only
+Clara Medical,"3070 El Camino Real, Santa Clara, CA 95051",37.3522076,-121.98191,Inactive
+Lily Beauty Castro Valley,"20406 Redwood Rd #E, Castro Valley, CA 94546",37.6945519,-122.08574,Service Only
+Lily Beauty Walnut Creek,"130 La Casa Via unit 204 Building 1 floor 2, Walnut Creek, CA 94598",37.9113138,-122.04139,Service Only
+Studio Luna,"6371 Mission St, Daly City, CA 94014",37.7053084,-122.46227,Inactive
+Skinfinity,"4122 Shelbyville Rd, St Matthews, KY 40207",38.251997,-85.645235,Inactive
+Timeless Spa,"3401 Nicholasville Rd, Lexington, KY 40503",37.9890843,-84.528179,Inactive
+Sthetics Spa,"450 A St, San Diego, CA 92101",32.718926,-117.16052,Inactive
+Tresor Rare GA,"1000 North Point Cir, Alpharetta, GA 30022",34.0473919,-84.29587,Inactive
+Introstem Redding,"900 Dana Dr, Ste B7, Redding, CA 96003",40.5872453,-122.35564,Inactive
+Aloe Spa Aesthetics,"3225 N 75th St. Suite 110, Scottsdale, AZ 85251",33.4856497,-111.91947,Service Only
+Saffron Spa,"8700 NE Vancouver Mall unit 156 Dr, Vancouver, WA 98662",45.6579846,-122.58401,Inactive
+Total Body,"4494 Southside Blvd Jacksonville, FL 32216",30.2635138,-81.558094,Inactive
+New You Delray Beach,"200 NE 2nd Ave, STE 104, Delray Beach, FL 33444",26.4605,-80.0731,Inactive
+Bio Lift,"1880 N Congress Ave STE 330, Boynton Beach, FL 33426",26.5457479,-80.090054,Inactive
+Melle Soul,"12247 Queenston Blvd suite A, Houston, TX 77095",29.9053067,-95.669627,Inactive
+Arizona Med Laser,"5111 N Scottsdale Rd Suite 208, Scottsdale, AZ 85250",32.8086018,-111.63483,Service Only
+Arizona Med Laser,"5701 W Talavi Blvd, Suite 101 Glendale, AZ 85306",33.6362724,-112.18184,Service Only
+The Med Club,"139 NW 136th ave, Sunrise, FL 33325",26.1201423,-80.330292,Service Only
+House of Riley,"2901 S Capital of Texas Hwy, Austin, TX 78746",30.2540028,-97.807358,Inactive
+Introstem Oregon,"1600 N Riverside Ave Unit 1136 Rogue Valley Mall Medford, Or 97501",42.3442688,-122.87727,Inactive
+Rachel's Best Soap,1595 Highway 36 W Roseville MN 55113,45.0128434,-93.1704907,Inactive
+Inglot,"4400 Sharon Rd, Charlotte, NC 28211",35.1529082,-80.833451,Inactive
+The Charcoal World,"3111 W Chandler Blvd Chandler, AZ 85226",33.3006457,-111.89891,Inactive
+Donna Ella,"5085 Westheimer Rd, Houston TX, 77056",29.7392661,-95.461281,Service Only
+Halo Spa Center,"20880 W Dixie Hwy, Miami, FL 33180",25.9686173,-80.148176,Service Only
+Forever Young,"4400 Sharon Rd, Charlotte, NC, 28211 (UNIT N10A)",35.1529082,-80.833451,Inactive
+Skin Medical Spa,4501 Mission Dr. Suite 2A San Diego CA 92109,39.836249,-86.271654,Service Only
+Voupre Portland,"635 SW Morrison St Portland, OR 97205",45.519345,-122.6792,Inactive
+You Glow SE,"8180 Macleod Trail SE Unit 26, Calgary, AB T2H 2B8",51.0478828,-114.05795,Service Only
+Nuderma Med Spa,"15725 Pomerado Rd, Poway, CA 92064",33.000505,-117.05741,Inactive
+Moana Crystals & Beauty,"2250 Kalakaua Ave suite 217 Honolulu, HI, 96815",21.2794091,-157.8285,Inactive
+New You Weston,"2201 N Commerce Pkwy, Weston, FL 33326",26.0925311,-80.367684,Inactive
+You Glow Vancouver,"2678 W Broadway Suite #207, Vancouver, BC V6K 2G3, Canada",49.2638435,-123.16624,Service Only
+Opal MD,"22554 Ventura Blvd Ste 109, Woodland Hills, CA 91364",34.167224,-118.61835,Service Only
+Equanimity Wellness Studio,"11661 Preston Rd Suite #170, Dallas, TX 75230",32.9090326,-96.804835,Inactive
+You Glow NW Calgary,"Unit 226, 1829 Ranchlands Blvd NW, Calgary, Alberta. T3G 2A7",51.12302,-114.19751,Service Only
+Lily Beauty Temecula,"29049 Overland Dr, Temecula #A CA 92591",33.51931,-117.15209,Service Only
+Lily Beauty San Rafael,"670 Las Gallinas Ave, San Rafael, CA 94903",38.006344,-122.54422,Service Only
+Laguna Beauty Med Spa,"25251 Paseo de Alicia, Laguna Hills, Unit 100#, CA 92653",33.6017651,-117.68892,Service Only
+Oasis Aesthetics Spa,"1555 Marine Drive West, Suite 210West Vancouver, BC V7V 1H9",49.3287174,-123.15804,Service Only
+Elev8 med Spa,10752 N 89th pl Ste c227 Scottsdale AZ 85260,33.4353338,-111.63763,Service Only
